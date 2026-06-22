@@ -1,0 +1,116 @@
+/* 남해 뚜벅이버스 — 와이어프레임 v4 디자인 */
+@import url('https://fonts.googleapis.com/css2?family=Jua&family=Gowun+Dodum&display=swap');
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: #EEF2E4;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 24px 14px;
+}
+
+.wf {
+  --bg:#FAFBF3; --paper:#fff;
+  --green:#34813C; --greend:#266B2E; --greenbg:#E9F3E1;
+  --navy:#1E4E78; --navy2:#2C68A4; --navybg:#E6EFF7;
+  --amber:#EFA92A; --amberd:#8A5A0E; --amberbg:#FBEDC6; --amberIcon:#5E3F0A;
+  --coral:#DD5E37; --corald:#9E3619;
+  --tx:#243026; --txs:#5E6B5B; --bd:#E2E7DA; --led:#22312A;
+  font-family:'Gowun Dodum',sans-serif; color:var(--tx);
+  background:#EEF2E4; padding:16px; border-radius:18px;
+  width:100%; max-width:760px;
+}
+.wf .jua { font-family:'Jua',sans-serif; font-weight:400; }
+
+.frame { border:1px solid var(--bd); border-radius:16px; overflow:hidden; background:var(--bg); }
+.bushead { background:var(--green); padding:8px 12px; display:flex; align-items:center; gap:9px; }
+.rbadge { background:#fff; color:var(--greend); font-family:'Jua',sans-serif; font-size:11px; padding:4px 9px; border-radius:20px; display:flex; align-items:center; gap:4px; white-space:nowrap; }
+.led { flex:1; background:var(--led); color:var(--amber); font-family:'Courier New',monospace; font-weight:700; font-size:12px; text-align:center; padding:6px 10px; border-radius:7px; letter-spacing:2px; }
+.bushead .bi { color:#fff; font-size:18px; }
+
+.nav { display:flex; align-items:center; gap:12px; padding:9px 16px; border-bottom:1px solid var(--bd); background:#fff; }
+.back { cursor:pointer; color:var(--txs); font-size:18px; display:flex; align-items:center; }
+.steps { position:relative; display:flex; gap:16px; align-items:center; margin:0 auto; }
+.steps::before { content:''; position:absolute; left:4px; right:4px; top:50%; height:2px; background:var(--bd); }
+.sd { position:relative; width:9px; height:9px; border-radius:50%; background:var(--bd); border:2px solid #fff; }
+.sd.on { background:var(--green); width:11px; height:11px; }
+
+.stage { min-height:486px; background:var(--bg); }
+.screen { display:none; padding:20px; }
+.stage.ready .screen.active { display:block; }
+
+.shead { display:flex; align-items:center; gap:9px; margin-bottom:8px; }
+.sicon { width:30px; height:30px; border-radius:9px; display:flex; align-items:center; justify-content:center; color:#fff; font-size:16px; flex-shrink:0; }
+.lead { font-family:'Jua',sans-serif; color:var(--navy); font-size:17px; }
+.subt { font-size:12px; color:var(--txs); line-height:1.7; margin:6px 0 0; }
+
+.pill { display:inline-flex; align-items:center; gap:4px; font-family:'Jua',sans-serif; font-size:12px; padding:5px 12px; border-radius:20px; }
+.p-green { background:var(--greenbg); color:var(--greend); }
+.p-amber { background:var(--amberbg); color:var(--amberd); }
+.p-navy { background:var(--navybg); color:var(--navy); }
+
+.btn { font-family:'Jua',sans-serif; font-size:14px; text-align:center; padding:11px; border-radius:13px; background:var(--green); color:#fff; display:flex; align-items:center; justify-content:center; gap:6px; cursor:pointer; border:none; }
+.btn:active { transform:scale(.98); }
+.btn:disabled { opacity:.55; cursor:default; }
+
+.pcard { background:var(--paper); border:1.5px solid var(--bd); border-radius:13px; padding:10px; display:flex; align-items:center; gap:10px; position:relative; }
+.thumb { width:38px; height:38px; border-radius:11px; display:flex; align-items:center; justify-content:center; font-size:18px; color:#fff; flex-shrink:0; }
+.stopno { position:absolute; top:-7px; left:-7px; background:var(--navy); color:#fff; font-family:'Jua',sans-serif; font-size:11px; width:20px; height:20px; border-radius:50%; display:flex; align-items:center; justify-content:center; }
+.match { margin-left:auto; font-family:'Jua',sans-serif; font-size:11px; color:var(--greend); background:var(--greenbg); padding:3px 8px; border-radius:12px; }
+.tag { font-size:11px; color:var(--txs); }
+
+.tbl { background:var(--navybg); color:var(--navy); border-radius:11px; padding:8px 12px; font-size:11px; display:flex; align-items:center; gap:8px; flex-wrap:wrap; }
+.tbl b { font-family:'Jua',sans-serif; color:var(--amberd); }
+
+.dayhead { font-family:'Jua',sans-serif; font-size:13px; color:#fff; background:var(--green); border-radius:11px 11px 0 0; padding:7px 12px; display:flex; align-items:center; gap:6px; }
+.dayhead.d2 { background:var(--navy2); }
+.daybox { border:1.5px solid var(--bd); border-top:none; border-radius:0 0 13px 13px; background:var(--paper); padding:10px; display:flex; flex-direction:column; gap:9px; }
+.depart { background:var(--navybg); color:var(--navy); border-radius:9px; padding:7px 10px; font-size:11px; display:flex; align-items:center; gap:7px; }
+.depart .t { font-family:'Jua',sans-serif; color:var(--amberd); margin-left:auto; white-space:nowrap; }
+.rstop { border:1.5px solid var(--bd); border-radius:11px; padding:9px 10px; cursor:pointer; position:relative; }
+.rstop:hover { border-color:var(--green); }
+.rstop .gomap { position:absolute; top:9px; right:9px; color:var(--green); font-size:15px; }
+.sname { font-family:'Jua',sans-serif; font-size:13px; color:var(--tx); display:flex; align-items:center; gap:6px; padding-right:20px; }
+.hop { font-family:'Jua',sans-serif; font-size:11px; background:var(--amberbg); color:var(--amberd); padding:2px 7px; border-radius:9px; margin-left:auto; white-space:nowrap; }
+.stay { font-size:11px; color:var(--txs); margin:5px 0; display:flex; align-items:center; gap:5px; }
+.nextbus { background:var(--amberbg); color:var(--amberd); border-radius:8px; padding:6px 9px; font-size:11px; display:flex; align-items:center; gap:6px; }
+.nextbus .t { font-family:'Jua',sans-serif; margin-left:auto; }
+.endbar { background:var(--greenbg); color:var(--greend); border-radius:8px; padding:6px 9px; font-size:11px; display:flex; align-items:center; gap:5px; font-family:'Jua',sans-serif; }
+
+.chk { font-size:12px; color:#A9B3A6; display:flex; align-items:center; gap:7px; transition:color .35s ease; }
+.chk i { color:var(--bd); transition:color .35s ease; }
+.chk.done { color:var(--greend); }
+.chk.done i { color:var(--green); }
+
+.ksearch { background:#fff; border:1px solid #cfcfcf; border-radius:10px; padding:7px 11px; font-size:12px; color:#444; display:flex; align-items:center; gap:7px; }
+.kbadge { font-family:'Jua',sans-serif; font-size:11px; background:#FEE500; color:#3C1E1E; padding:3px 9px; border-radius:10px; display:inline-flex; align-items:center; gap:4px; }
+.near { display:flex; align-items:center; gap:9px; background:var(--paper); border:1.5px solid var(--bd); border-radius:11px; padding:8px 10px; }
+.near .ic { width:30px; height:30px; border-radius:9px; display:flex; align-items:center; justify-content:center; font-size:15px; flex-shrink:0; color:#fff; }
+.near .nm { font-size:12px; color:var(--tx); }
+.near .nm a { color:var(--tx); text-decoration:none; }
+.near .nm a:hover { text-decoration:underline; }
+.near .mt { font-size:11px; color:var(--txs); }
+
+.iconbadge { width:54px; height:54px; border-radius:16px; display:flex; align-items:center; justify-content:center; color:#fff; font-size:26px; margin:0 auto; }
+
+.empty { color:var(--txs); font-size:12px; }
+
+/* 가상 지도 + 아이콘 핀 */
+.fakemap { position:relative; width:100%; height:240px; overflow:hidden; background:#E7EFDC; }
+.vpin { position:absolute; transform:translate(-50%,-50%); width:28px; height:28px; border-radius:50%; display:flex; align-items:center; justify-content:center; color:#fff; font-size:15px; border:2px solid #fff; box-shadow:0 2px 5px rgba(0,0,0,.28); z-index:2; }
+.vpin.stop { width:36px; height:36px; font-size:18px; background:var(--navy); z-index:3; }
+.vpin.eat { background:var(--coral); }
+.vpin.cafe { background:var(--amber); color:var(--amberIcon); }
+.vlabel { position:absolute; transform:translate(-50%,0); font-family:'Jua',sans-serif; font-size:11px; color:var(--navy); background:rgba(255,255,255,.78); padding:1px 6px; border-radius:6px; white-space:nowrap; z-index:3; }
+
+/* 2일차 터미널 도착 바 */
+.depart.arrive { background:var(--greenbg); color:var(--greend); }
+.depart.arrive .t { color:var(--greend); }
+.iw { padding:6px 10px; font-size:12px; line-height:1.5; font-family:'Gowun Dodum',sans-serif; }
+.iw a { color:var(--navy); }
+
+@keyframes spin { to { transform:rotate(360deg); } }
+.ti-loader-2 { display:inline-block; animation:spin 1s linear infinite; }

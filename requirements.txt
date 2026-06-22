@@ -1,0 +1,5 @@
+Flask>=3.0
+requests>=2.31
+python-dotenv>=1.0
+# 임베딩 엔진(메인). 미설치/다운로드 실패 시 자동으로 키워드 폴백으로 동작합니다.
+sentence-transformers>=2.7

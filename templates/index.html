@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>남해 뚜벅이버스 · 코스 만들기</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Jua&family=Gowun+Dodum&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.7.0/dist/tabler-icons.min.css" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+</head>
+<body>
+  <div class="wf">
+    <div class="frame">
+      <div class="bushead">
+        <span class="rbadge"><i class="ti ti-bus" style="font-size:13px" aria-hidden="true"></i> 뚜벅이버스</span>
+        <span class="led" id="wfLed">코스 만들기</span>
+        <i class="ti ti-steering-wheel bi" aria-hidden="true"></i>
+      </div>
+      <div class="nav">
+        <span class="back" id="wfBack" aria-label="뒤로"><i class="ti ti-arrow-left" aria-hidden="true"></i></span>
+        <div class="steps">
+          <span class="sd"></span><span class="sd"></span><span class="sd"></span>
+          <span class="sd"></span><span class="sd"></span><span class="sd"></span>
+        </div>
+      </div>
+
+      <div class="stage" id="wfStage">
+
+        <!-- 1. 입력 -->
+        <section class="screen" data-screen="input">
+          <div class="iconbadge" style="background:var(--green);margin-top:18px"><i class="ti ti-bus-stop" aria-hidden="true"></i></div>
+          <div class="lead" style="font-size:21px;line-height:1.4;text-align:center;margin-top:14px">남해에서<br>어떤 하루를 보내고 싶나요?</div>
+          <p class="subt" style="text-align:center">문장을 자유롭게 적으면 뚜벅이버스 정류장으로 코스를 묶어드려요.</p>
+          <textarea id="wfInput" style="width:100%;margin-top:16px;min-height:92px;border-radius:13px;border:1.5px solid var(--bd);padding:12px;font-family:inherit;font-size:13px;resize:none;background:#fff;color:var(--tx)">버스 타고 남해 천천히 돌면서, 바다랑 작은 마을 구경하고 카페에서 쉬고 싶어</textarea>
+          <button class="btn" id="wfGo" style="margin:18px auto 0;width:200px"><i class="ti ti-sparkles" aria-hidden="true"></i> 코스 만들기</button>
+          <p class="subt" id="wfErr" style="text-align:center;color:var(--coral);display:none"></p>
+        </section>
+
+        <!-- 2. 분석 -->
+        <section class="screen" data-screen="analyze">
+          <div style="text-align:center;display:flex;flex-direction:column;align-items:center;gap:10px;padding-top:34px">
+            <div class="iconbadge" style="background:var(--green)"><i class="ti ti-bus" aria-hidden="true"></i></div>
+            <div class="lead" style="font-size:16px;margin-top:4px">문장을 읽고 있어요</div>
+            <p class="subt" style="margin:0">취향에 맞는 정류장을 고르는 중…</p>
+            <div style="width:240px;height:9px;background:var(--greenbg);border-radius:8px;overflow:hidden;margin-top:6px"><div id="wfProg" style="width:6%;height:100%;background:var(--green);transition:width 3.9s ease"></div></div>
+            <div style="display:flex;flex-direction:column;gap:7px;margin-top:12px;text-align:left">
+              <div class="chk" data-chk><i class="ti ti-circle" aria-hidden="true"></i> 문장 분위기 읽기</div>
+              <div class="chk" data-chk><i class="ti ti-circle" aria-hidden="true"></i> 키워드 뽑기</div>
+              <div class="chk" data-chk><i class="ti ti-circle" aria-hidden="true"></i> 정류장 매칭</div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 3. 키워드 -->
+        <section class="screen" data-screen="keywords">
+          <div class="shead"><div class="sicon" style="background:var(--green)"><i class="ti ti-tags" aria-hidden="true"></i></div><div class="lead">이런 키워드를 찾았어요</div></div>
+          <p class="subt">문장에서 뽑은 키워드예요. 이걸로 어울리는 정류장을 골라요.</p>
+          <div id="kwList" style="display:flex;flex-wrap:wrap;gap:8px;margin-top:10px"></div>
+          <button class="btn" data-go="stops" style="margin:26px auto 0;width:220px"><i class="ti ti-bus-stop" aria-hidden="true"></i> 정류장 찾으러 가기</button>
+        </section>
+
+        <!-- 4. 정류장 4곳 -->
+        <section class="screen" data-screen="stops">
+          <div class="shead"><div class="sicon" style="background:var(--navy)"><i class="ti ti-map-pin" aria-hidden="true"></i></div><div class="lead">딱 맞는 정류장</div></div>
+          <p class="subt" style="margin-bottom:12px">이 정류장들을 뚜벅이버스 시간표로 묶어 코스를 만들어요.</p>
+          <div id="stopList" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:11px"></div>
+          <button class="btn" data-go="route" style="margin:18px auto 0;width:220px"><i class="ti ti-route" aria-hidden="true"></i> 버스 코스 만들기</button>
+        </section>
+
+        <!-- 5. 1박2일 코스 -->
+        <section class="screen" data-screen="route">
+          <div class="shead"><div class="sicon" style="background:var(--green)"><i class="ti ti-route" aria-hidden="true"></i></div><div class="lead">1박 2일 뚜벅이버스 코스</div></div>
+          <p class="subt" style="margin-bottom:10px">한 정류장에서 3~4시간 머물고 다음 회차 버스를 타요. 정류장을 누르면 주변 지도가 열려요.</p>
+          <div class="tbl" id="termTbl" style="margin-bottom:12px"></div>
+          <div id="routeBox" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:12px"></div>
+        </section>
+
+        <!-- 6. 지도(실제 카카오맵) -->
+        <section class="screen" data-screen="kakao">
+          <div style="display:flex;align-items:center;gap:8px;margin-bottom:12px;flex-wrap:wrap">
+            <div class="sicon" style="background:var(--navy);width:28px;height:28px;font-size:15px"><i class="ti ti-map-pin" aria-hidden="true"></i></div>
+            <div class="jua" style="font-size:15px;color:var(--navy)" id="kkTitle">정류장 주변</div>
+            <span class="kbadge"><i class="ti ti-map-pin" style="font-size:11px" aria-hidden="true"></i> 카카오맵</span>
+          </div>
+          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px">
+            <div style="position:relative;border-radius:13px;overflow:hidden;border:1px solid var(--bd)">
+              <div style="position:absolute;top:8px;left:8px;right:8px;z-index:2"><div class="ksearch"><i class="ti ti-search" style="font-size:13px" aria-hidden="true"></i> 정류장 2km 내 음식점·카페</div></div>
+              <div id="kkMap" class="fakemap"></div>
+              <div style="position:absolute;bottom:8px;left:8px;display:flex;gap:6px;font-size:11px;flex-wrap:wrap;z-index:2">
+                <span style="background:#fff;border-radius:8px;padding:3px 7px;color:var(--corald);border:1px solid #eee">식당</span>
+                <span style="background:#fff;border-radius:8px;padding:3px 7px;color:var(--amberd);border:1px solid #eee">카페</span>
+                <span style="background:#fff;border-radius:8px;padding:3px 7px;color:var(--navy);border:1px solid #eee">정류장</span>
+              </div>
+            </div>
+            <div style="display:flex;flex-direction:column;gap:8px">
+              <div class="tag">정류장에서 가까운 곳</div>
+              <div id="kkList" style="display:flex;flex-direction:column;gap:8px"></div>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </div>
+    <p style="font-size:11px;color:#8A968A;text-align:center;margin-top:10px"><i class="ti ti-hand-finger" aria-hidden="true"></i> 화면 안의 버튼과 정류장 카드를 눌러보세요</p>
+  </div>
+
+  <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,448 @@
+{
+  "metadata": {
+    "city": "남해",
+    "transport": "뚜벅이버스",
+    "search_radius_km": 2,
+    "total_stations": 8,
+    "search_date": "2026-06-18"
+  },
+  "stations": [
+    {
+      "stop_id": "stop0",
+      "stop_name": "동정",
+      "lat": 34.810083,
+      "lng": 127.870563,
+      "stop_address": "남해공용터미널 다음 정류장",
+      "schedule": {
+        "1회차": "09:00",
+        "2회차": "13:00",
+        "3회차": "16:00"
+      },
+      "attractions": [
+        {
+          "name": "돌창고",
+          "address": "경남 남해군 삼동면 봉화로 538 돌창고",
+          "lat": 34.809482,
+          "lng": 127.981835,
+          "rating": 4.3,
+          "rating_count": 0,
+          "categories": ["감성·사진"],
+          "description": "남해의 옛 창고가 전시와 카페가 어우러진 공간으로 새롭게 태어난 곳",
+          "type": "복합문화공간"
+        },
+        {
+          "name": "바래길 트레킹",
+          "address": "경남 남해군 남면",
+          "lat": 34.790072,
+          "lng": 127.862855,
+          "rating": 4.0,
+          "rating_count": 0,
+          "categories": ["체험·액티비티", "자연·힐링"],
+          "description": "해안 트레킹 코스",
+          "type": "트레킹"
+        }
+      ]
+    },
+    {
+      "stop_id": "stop1",
+      "stop_name": "바래길12",
+      "lat": 34.790072,
+      "lng": 127.862855,
+      "stop_address": "남해군 남면 평산리, 평산1리마을 인근 어항(평산항입구)",
+      "schedule": {
+        "1회차": "09:10",
+        "2회차": "13:10",
+        "3회차": "16:10"
+      },
+      "attractions": [
+        {
+          "name": "임진성길 트레킹(서상양조장·남해스포츠파크·장항해변·바래길작은미술관)",
+          "address": "경남 남해군 남면 덕월리 산85",
+          "lat": 34.791958,
+          "lng": 127.854252,
+          "rating": 4.2,
+          "rating_count": 0,
+          "categories": ["체험·액티비티", "자연·힐링"],
+          "description": "서상양조장, 장항해변, 작은 미술관 등을 지나며 남해의 해안 풍경과 로컬 공간을 함께 즐길 수 있는 긴 트레킹 코스",
+          "type": "트레킹"
+        },
+        {
+          "name": "섬이정원",
+          "address": "경남 남해군 남면로 1534-110",
+          "lat": 34.752261,
+          "lng": 127.860652,
+          "rating": 3.8,
+          "rating_count": 854,
+          "categories": ["감성·사진", "자연·힐링"],
+          "description": "남해의 자연 풍경 속에서 계절별 정원과 산책로를 즐길 수 있는 감성적인 정원 여행지",
+          "type": "정원",
+          "hours": "08:00 - 18:00"
+        },
+        {
+          "name": "Darangi Village",
+          "address": "21 Nammyeon-ro 679beon-gil, Nam-myeon, Namhae, Gyeongsangnam-do, South Korea",
+          "lat": 34.727646,
+          "lng": 127.893330,
+          "rating": 4.0,
+          "rating_count": 7030,
+          "categories": ["감성·사진", "자연·힐링"],
+          "description": "바다를 따라 펼쳐진 계단식 논과 마을 풍경이 아름다운 남해 대표 감성 사진 명소",
+          "type": "마을",
+          "hours": "08:00 - 20:30"
+        }
+      ]
+    },
+    {
+      "stop_id": "stop2",
+      "stop_name": "가천다랭이마을",
+      "lat": 34.72752,
+      "lng": 127.894035,
+      "stop_address": "경남 남해군 남면 남면로 679번길 21 (가천 다랭이마을)",
+      "schedule": {
+        "1회차": "09:30",
+        "2회차": "13:30",
+        "3회차": "16:30"
+      },
+      "attractions": [
+        {
+          "name": "가천다랭이마을 (드라마 '정년이' 촬영지)",
+          "address": "경남 남해군 남면 남면로 702 다랭이마을",
+          "lat": 34.728067,
+          "lng": 127.890956,
+          "rating": 4.0,
+          "rating_count": 0,
+          "categories": ["감성·사진", "자연·힐링"],
+          "description": "바다를 따라 펼쳐진 계단식 논과 마을 풍경이 아름다운 남해 대표 감성 사진 명소",
+          "type": "마을"
+        },
+        {
+          "name": "일출전망대",
+          "address": "경남 남해군 남면 남면로 702 인근",
+          "lat": 34.728067,
+          "lng": 127.890956,
+          "rating": 4.3,
+          "rating_count": 21,
+          "categories": ["감성·사진", "자연·힐링"],
+          "description": "산책하며 일출과 바다 전망을 함께 즐기기 좋은 곳",
+          "type": "전망대"
+        },
+        {
+          "name": "다랭이마을 정자",
+          "address": "789 Honghyeon-ri, Nam-myeon, Namhae, Gyeongsangnam-do, South Korea",
+          "lat": 34.7258542,
+          "lng": 127.895264,
+          "rating": 4.0,
+          "rating_count": 3,
+          "categories": ["감성·사진"],
+          "description": "마을을 돌아다니면서 만나는 쉼터",
+          "type": "휴게소"
+        }
+      ]
+    },
+    {
+      "stop_id": "stop3",
+      "stop_name": "앵강다숲",
+      "lat": 34.779119,
+      "lng": 127.950612,
+      "stop_address": "남해군 이동면 신전마을 (앵강다숲 방풍림)",
+      "schedule": {
+        "1회차": "09:57",
+        "2회차": "13:57",
+        "3회차": "16:57"
+      },
+      "attractions": [
+        {
+          "name": "앵강다숲마을",
+          "address": "경남 남해군 이동면 성남로 79-10 지역활성화센터",
+          "lat": 34.778311,
+          "lng": 127.951974,
+          "rating": 4.8,
+          "rating_count": 28,
+          "categories": ["체험·액티비티", "자연·힐링"],
+          "description": "앵강만 자락의 어촌·농촌 마을. 조용하고 평화로운 어촌에 흠뻑 취할 수 있는 곳. 갯벌체험·바지락 캐기 체험 가능",
+          "type": "어촌마을"
+        },
+        {
+          "name": "남해 미국마을",
+          "address": "8 Migungmaeul-gil, Idong-myeon, Namhae, Gyeongsangnam-do, South Korea",
+          "lat": 34.7798393,
+          "lng": 127.928976,
+          "rating": 3.6,
+          "rating_count": 187,
+          "categories": ["감성·사진"],
+          "description": "주거 형태의 테마 마을. 유럽풍 건물과 바다 전망",
+          "type": "테마마을"
+        },
+        {
+          "name": "보물섬나라",
+          "address": "2443 Namhae-daero, Idong-myeon, Namhae, Gyeongsangnam-do, South Korea",
+          "lat": 34.8166322,
+          "lng": 127.924203,
+          "rating": 3.4,
+          "rating_count": 42,
+          "categories": ["박물관"],
+          "description": "마늘 관련 자료와 남해 갈릭 문화를 소개하는 박물관",
+          "type": "박물관",
+          "hours": "Tuesday-Sunday 09:00 - 18:00"
+        },
+        {
+          "name": "Munhang Fishing Experience Village",
+          "address": "Munhang-ri, Seolcheon-myeon, Namhae-gun, Gyeongsangnam-do, South Korea",
+          "lat": 34.9114786,
+          "lng": 127.914248,
+          "rating": 4.7,
+          "rating_count": 10,
+          "categories": ["체험·액티비티"],
+          "description": "낚시, 갯벌 탐사, 오징어 잡기, 조개 캐기 등의 활동",
+          "type": "체험마을"
+        }
+      ]
+    },
+    {
+      "stop_id": "stop4",
+      "stop_name": "복곡1주차장",
+      "lat": 34.774553,
+      "lng": 127.985501,
+      "stop_address": "경남 남해군 이동면 신전리 5 (보리암 복곡주차장)",
+      "schedule": {
+        "1회차": "10:07",
+        "2회차": "14:07",
+        "3회차": "17:07"
+      },
+      "attractions": [
+        {
+          "name": "금산 보리암",
+          "address": "경남 남해군 상주면 보리암로 665",
+          "lat": 34.753849,
+          "lng": 127.982995,
+          "rating": 4.6,
+          "rating_count": 6264,
+          "categories": ["자연·힐링", "역사·문화", "감성·사진"],
+          "description": "푸른 바다와 기암괴석이 어우러진 사찰. 남해 바다와 섬 풍경을 한눈에 내려다보며 조용히 산책하기 좋은 힐링 전망 명소",
+          "type": "사찰",
+          "hours": "03:30 - 21:00",
+          "phone": "+82 55-862-6500"
+        },
+        {
+          "name": "Ssanghongmun (쌍홍문)",
+          "address": "Sangju-ri, Sangju-myeon, Namhae-gun, Gyeongsangnam-do, South Korea",
+          "lat": 34.751631,
+          "lng": 127.982315,
+          "rating": 4.7,
+          "rating_count": 40,
+          "categories": ["자연·힐링"],
+          "description": "두 개의 굴이 무지개처럼 보인다고 해서 붙여진 이름. 신라의 대승 원효가 이름을 지었다고 알려짐",
+          "type": "동굴"
+        },
+        {
+          "name": "바람힘적미술관",
+          "address": "519-4 Geumam-ro, Samdong-myeon, Namhae, Gyeongsangnam-do, South Korea",
+          "lat": 34.7622222,
+          "lng": 128.012778,
+          "rating": 3.8,
+          "rating_count": 412,
+          "categories": ["미술관"],
+          "description": "강변을 따라 설치된 미술관. 조용한 분위기에서 예술을 감상할 수 있음",
+          "type": "미술관",
+          "hours": "Tuesday-Sunday 10:00 - 17:00"
+        },
+        {
+          "name": "38 Scenic Views of Geumsan",
+          "address": "Sangju-ri, Sangju-myeon, Namhae-gun, Gyeongsangnam-do, South Korea",
+          "lat": 34.7168397,
+          "lng": 127.9948381,
+          "rating": 4.0,
+          "rating_count": 5,
+          "categories": ["자연·힐링"],
+          "description": "금산의 38경. 일출 경관이 특히 아름다움",
+          "type": "전망지"
+        }
+      ]
+    },
+    {
+      "stop_id": "stop5",
+      "stop_name": "독일마을",
+      "lat": 34.800859,
+      "lng": 128.038434,
+      "stop_address": "경남 남해군 삼동면 독일로 92 (남해독일마을관광안내소 승강장)",
+      "schedule": {
+        "1회차": "10:37",
+        "2회차": "14:37",
+        "3회차": "17:37"
+      },
+      "attractions": [
+        {
+          "name": "Namhae German Village",
+          "address": "1154 Mulgeon-ri, Samdong-myeon, Namhae, Gyeongsangnam-do, South Korea",
+          "lat": 34.7997168,
+          "lng": 128.0386376,
+          "rating": 4.0,
+          "rating_count": 5494,
+          "categories": ["감성·사진", "역사·문화"],
+          "description": "독일 이주민이 만든 이국적인 테마마을. 유럽풍 건물과 바다 전망, 맥주로 유명한 남해 대표 감성 명소",
+          "type": "테마마을",
+          "hours": "Monday-Sunday 09:00 - 19:30",
+          "phone": "+82 55-867-8897"
+        },
+        {
+          "name": "원예예술촌·목서향원",
+          "address": "경남 남해군 삼동면 예술길 7",
+          "lat": 34.801495,
+          "lng": 128.038628,
+          "rating": 3.9,
+          "rating_count": 973,
+          "categories": ["자연·힐링", "감성·사진", "체험·액티비티"],
+          "description": "세계 각국의 정원과 아기자기한 전시·체험 공간을 함께 즐길 수 있는 감성 정원 여행지. 꽃과 풍경을 보며 천천히 산책하기 좋은 자연 힐링 명소",
+          "type": "정원",
+          "hours": "09:00 - 18:00"
+        },
+        {
+          "name": "예원영농조합법인 (수목원)",
+          "address": "경남 남해군 삼동면 예술길 39",
+          "lat": 34.803789,
+          "lng": 128.036223,
+          "rating": 3.9,
+          "rating_count": 0,
+          "categories": ["자연·힐링", "감성·사진"],
+          "description": "산책하며 구경하기 좋은 수목원",
+          "type": "수목원"
+        },
+        {
+          "name": "남해 양마목장 양마르벨타데크",
+          "address": "179-45 Geumam-ro, Samdong-myeon, Namhae, Gyeongsangnam-do, South Korea",
+          "lat": 34.7903782,
+          "lng": 128.0238553,
+          "rating": 3.9,
+          "rating_count": 298,
+          "categories": ["체험·액티비티"],
+          "description": "양과 다른 동물들과 상호작용할 수 있는 동물 체험 농장",
+          "type": "동물체험"
+        },
+        {
+          "name": "도이처플라츠(독일광장) Museum",
+          "address": "2572 Bonghwa-ri, Samdong-myeon, Namhae, Gyeongsangnam-do, South Korea",
+          "lat": 34.7999381,
+          "lng": 128.0382883,
+          "rating": 3.8,
+          "rating_count": 179,
+          "categories": ["박물관"],
+          "description": "독일마을의 역사와 문화를 전시하는 박물관",
+          "type": "박물관"
+        },
+        {
+          "name": "독일마을 전망대",
+          "address": "산55 Mulgeon-ri, Samdong-myeon, Namhae, Gyeongsangnam-do, South Korea",
+          "lat": 34.799424,
+          "lng": 128.038888,
+          "rating": 4.2,
+          "rating_count": 43,
+          "categories": ["감성·사진"],
+          "description": "독일마을 전체를 내려다볼 수 있는 전망대",
+          "type": "전망대"
+        }
+      ]
+    },
+    {
+      "stop_id": "stop6",
+      "stop_name": "홍현",
+      "lat": 34.738204,
+      "lng": 127.900758,
+      "stop_address": "남해군 남면 홍현리",
+      "schedule": {
+        "1회차": "09:37",
+        "2회차": "13:37",
+        "3회차": "16:37"
+      },
+      "attractions": [
+        {
+          "name": "Darangi Village",
+          "address": "21 Nammyeon-ro 679beon-gil, Nam-myeon, Namhae, Gyeongsangnam-do, South Korea",
+          "lat": 34.727646,
+          "lng": 127.893330,
+          "rating": 4.0,
+          "rating_count": 7030,
+          "categories": ["감성·사진", "자연·힐링"],
+          "description": "바다를 따라 펼쳐진 계단식 논과 마을 풍경이 아름다운 남해 대표 감성 사진 명소",
+          "type": "마을"
+        },
+        {
+          "name": "다랭이마을 전망대",
+          "address": "산312-10 Honghyeon-ri, Nam-myeon, Namhae, Gyeongsangnam-do, South Korea",
+          "lat": 34.725520,
+          "lng": 127.892690,
+          "rating": 4.3,
+          "rating_count": 21,
+          "categories": ["감성·사진", "자연·힐링"],
+          "description": "다랭이마을의 전망을 내려다볼 수 있는 전망대. 주차장 인근",
+          "type": "전망대"
+        },
+        {
+          "name": "하라우지 마을 석방앗",
+          "address": "9-9 Honghyeon-ri, Nam-myeon, Namhae, Gyeongsangnam-do, South Korea",
+          "lat": 34.7484643,
+          "lng": 127.909862,
+          "rating": 4.0,
+          "rating_count": 87,
+          "categories": ["자연·힐링"],
+          "description": "조수가 빠졌을 때 드러나는 돌로 만든 방앗돌. 옛날 고기를 잡는 방식을 보여주는 문화유산",
+          "type": "유산"
+        }
+      ]
+    },
+    {
+      "stop_id": "stop9",
+      "stop_name": "남해공용터미널",
+      "lat": 34.838553,
+      "lng": 127.893742,
+      "stop_address": "경남 남해군 남해읍 (남해공용터미널)",
+      "schedule": {
+        "1회차": "08:50",
+        "2회차": "12:50",
+        "3회차": "15:50"
+      },
+      "attractions": [
+        {
+          "name": "남해 토피아랜드",
+          "address": "270-106 Seobu-ro, Changseon-myeon, Namhae, Gyeongsangnam-do, South Korea",
+          "lat": 34.845607,
+          "lng": 127.9818175,
+          "rating": 4.2,
+          "rating_count": 208,
+          "categories": ["자연·힐링", "감성·사진"],
+          "description": "아름답게 조성된 개인 정원. 5,000원의 입장료가 있으며 남해 해상 전망이 우수함. 가족 방문객들이 자주 찾음",
+          "type": "정원",
+          "hours": "09:00 - 18:00",
+          "phone": "+82 10-5373-5806"
+        },
+        {
+          "name": "Park Wonsuk's Coffee & Story",
+          "address": "62 Yesul-gil, Samdong-myeon, Namhae, Gyeongsangnam-do, South Korea",
+          "lat": 34.8041907,
+          "lng": 128.035159,
+          "rating": 3.7,
+          "rating_count": 429,
+          "categories": ["감성·사진", "카페"],
+          "description": "유명 배우 박원숙이 운영하는 카페. 원예예술촌 내 위치하며 음료 주문 후 이용 가능",
+          "type": "카페",
+          "hours": "Wednesday-Sunday 09:00 - 18:00 (Tuesday Closed)",
+          "phone": "+82 55-867-1030"
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "total_attractions_found": 30,
+    "stations_with_data": 8,
+    "average_attractions_per_station": 3.75,
+    "highest_rated_attraction": {
+      "name": "앵강다숲마을",
+      "rating": 4.8,
+      "station": "앵강다숲"
+    },
+    "most_reviewed_attraction": {
+      "name": "Darangi Village",
+      "rating_count": 7030,
+      "station": "바래길12, 홍현"
+    }
+  }
+}
