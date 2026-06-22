@@ -18,7 +18,7 @@ namhae-trip/
 │   ├── css/style.css
 │   └── js/main.js
 ├── requirements.txt
-├── .env.example                # KAKAO_REST_API_KEY 설정 예시
+├── .env
 └── README.md
 ```
 
