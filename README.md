@@ -41,7 +41,7 @@ pip install -r requirements.txt
 
 3) 카카오 키 설정 (주변 맛집·카페 검색용)
 ```bash
-cp .env.example .env      # Windows: copy .env.example .env
+cp .env   
 # .env 를 열어 KAKAO_REST_API_KEY 값을 채워넣기
 ```
 
